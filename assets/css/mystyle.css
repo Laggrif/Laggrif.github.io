@@ -73,6 +73,10 @@
     padding-bottom: 20px;
 }
 
+.contentTitle h2 {
+    font-size: 18px;
+}
+
 .centered {
     display: flex;
     flex-direction: column;
@@ -82,4 +86,8 @@
 
 a:hover {
     cursor: pointer;
+}
+
+.indented {
+    padding-left: 20px;
 }
