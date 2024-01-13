@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="title-bar-container"></div>
+<script>
+  // Fetch and append the title bar content dynamically
+  const titleBarContainer = document.getElementById('title-bar-container');
+  fetch('../TitleBar.html')
+          .then(response => response.text())
+          .then(html => {
+            titleBarContainer.innerHTML = html;
+          });
+</script>
+
+<div class="content centered">
+    <h1 class="contentTitle">This page is under construction.</h1>
+    <p>Thank you for your understanding</p>
+    <p>Meanwhile, you can check out my <a href="https://github.com/Laggrif?tab=repositories">GitHub</a> to see my projects.</p>
+</div>
+
+</body>
+</html>
