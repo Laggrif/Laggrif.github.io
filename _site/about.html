@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="title-bar-container"></div>
+<script>
+    // Fetch and append the title bar content dynamically
+    const titleBarContainer = document.getElementById('title-bar-container');
+    fetch('../TitleBar.html')
+        .then(response => response.text())
+        .then(html => {
+            titleBarContainer.innerHTML = html;
+        });
+</script>
+
+<div class="content">
+    <h1 class="contentTitle">About me</h1>
+    <p>
+        My name is Ugo Novello (aka Laggrif). I am a 21-year-old student in second year of a Bachelor's degree in Computer Science at EPFL.
+    <br>
+        My main interests are:
+        <ul>
+            <li>Mobile Applications (Android only)</li>
+            <li>Game development</li>
+            <li>Machine learning</li>
+            <li>3D modeling</li>
+        </ul>
+    </p>
+
+    <div style="height: 50px"></div>
+    <h1 class="contentTitle">Why this website</h1>
+    <p>
+        I created this website to showcase my projects and eventually attract people to what I do.
+        <br>
+        This website is currently a work in progress, so do not expect it to be perfect but I will try to improve it over time and respond to any feedback I get.
+    </p>
+</div>
+
+</body>
+</html>
